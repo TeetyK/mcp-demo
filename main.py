@@ -2,6 +2,8 @@ from typing import Any
 import httpx
 from mcp.server.fastmcp import FastMCP
 import os
+import dotenv
+dotenv.load_dotenv()
 mcp = FastMCP("mcp-product")
 
 api_base = os.environ["API_base"]
